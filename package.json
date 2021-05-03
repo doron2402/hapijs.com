@@ -7,7 +7,7 @@
     "async": "0.9.x",
     "boom": "2.x.x",
     "catbox-memory": "^1.1.1",
-    "catbox-redis": "^1.0.4",
+    "catbox-redis": "^3.0.0",
     "getconfig": "1.x.x",
     "good": "^5.0.0",
     "good-console": "^3.0.1",
