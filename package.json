@@ -7,18 +7,21 @@
     "async": "0.9.x",
     "boom": "2.x.x",
     "catbox-memory": "^1.1.1",
-    "catbox-redis": "^1.0.4",
+    "catbox-redis": "^3.0.0",
     "getconfig": "1.x.x",
-    "good": "^5.0.0",
-    "good-console": "^3.0.1",
-    "hapi": "8.x.x",
+    "good": "^7.1.0",
+    "good-console": "^6.4.1",
+    "hapi": "9.0.0",
     "hoek": "2.x.x",
     "jade": "1.x.x",
-    "wreck": "5.x.x"
+    "wreck": "5.x.x",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "build": "make",
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,5 +38,6 @@
     "glob-cli": "^1.0.0",
     "stylus": "^0.49.3",
     "uglify-js": "^2.4.15"
-  }
+  },
+  "snyk": true
 }
